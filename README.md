@@ -35,7 +35,7 @@ const client = new Client({ version: '1.13' })
 provide your own path to a file:
 
 ```js
-const { KubeConfig } = require('kubernetes-client')
+const { Client, KubeConfig } = require('kubernetes-client')
 const kubeconfig = new KubeConfig()
 kubeconfig.loadFromFile('~/some/path')
 const Request = require('kubernetes-client/backends/request')
